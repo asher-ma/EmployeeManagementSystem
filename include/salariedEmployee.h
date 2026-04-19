@@ -7,9 +7,9 @@
 
 class SalariedEmployee : public Employee {
     public:
-        // Collect name and id for base class
-        // and unique parameters for current class
+        // Collect name and id for base class and unique parameters for current class
         SalariedEmployee(const std::string& name_, int id_, double salary);
+
         // Overridding virtual functions
         //void display() const override;
         double calculatePay() const override;
