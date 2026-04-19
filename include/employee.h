@@ -2,19 +2,20 @@
 #define _EMPLOYEE_H_
 
 #include <string>
+#include <iostream>
 
 class Employee {
     public:
-        Employee(string name_, int id_) : name(name_), id(id_) {}        
+        Employee(std::string name_, int id_) : name(name_), id(id_) {}        
         virtual ~Employee() {}
 
         virtual void display() const {
-            cout << "Employee: " << name << " (ID: " << id << ")" << endl;
+            std::cout << "Employee: " << name << " (ID: " << id << ")" << std::endl;
         }
         virtual double calculatePay() const =0;
 
     private:
-        string name;
+        std::string name;
         int id;
 };
 

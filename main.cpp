@@ -1,6 +1,5 @@
 #include <iostream>
 #include <vector>
-using namespace std;
 
 #include "include/employee.h"
 #include "include/salariedEmployee.h"
@@ -8,7 +7,7 @@ using namespace std;
 #include "include/comissionEmployee.h"
 
 int main (){
-    vector<Employee*> employees;
+    std::vector<Employee*> employees;
 
     employees.push_back(new SalariedEmployee("Alice", 101, 1200));
     employees.push_back(new HourlyEmployee("Bob", 102, 15, 45));
@@ -16,12 +15,12 @@ int main (){
 
     for (const auto& emp : employees){
         emp->display();
-        cout << "Weekly Pay: " << emp->calculatePay() << endl;
+        std::cout << "Weekly Pay: " << emp->calculatePay() << std::endl;
     }
 
     for (auto emp : employees){
         delete emp;
     }
-    
+
     return 0;
 }

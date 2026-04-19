@@ -1,9 +1,8 @@
 #include <iostream>
-using namespace std;
 
 #include "../include/comissionEmployee.h"
 
-ComissionEmployee::ComissionEmployee(string name_, int id_, double salary, double sales_, double rate)
+ComissionEmployee::ComissionEmployee(std::string name_, int id_, double salary, double sales_, double rate)
     : Employee(name_, id_), baseSalary(salary), sales(sales_), comissionRate(rate) {}
 
 double ComissionEmployee::calculatePay() const {
@@ -12,5 +11,5 @@ double ComissionEmployee::calculatePay() const {
 
 void ComissionEmployee::display() const {
     Employee::display();
-    cout << "Type: Comission" << endl;
+    std::cout << "Type: Comission" << std::endl;
 }

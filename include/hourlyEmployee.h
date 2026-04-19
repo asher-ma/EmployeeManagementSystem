@@ -7,7 +7,7 @@
 
 class HourlyEmployee : public Employee {
     public:
-        HourlyEmployee(string name_, int id_, double rate, double hours);
+        HourlyEmployee(std::string name_, int id_, double rate, double hours);
         void display() const override;
         double calculatePay() const override;
         

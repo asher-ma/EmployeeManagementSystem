@@ -1,9 +1,8 @@
 #include <iostream>
-using namespace std;
 
 #include "../include/hourlyEmployee.h"
 
-HourlyEmployee::HourlyEmployee(string name_, int id_, double rate, double hours)
+HourlyEmployee::HourlyEmployee(std::string name_, int id_, double rate, double hours)
     : Employee(name_, id_), hourlyRate(rate), hoursWorked(hours) {}
 
 double HourlyEmployee::calculatePay() const {
@@ -18,5 +17,5 @@ double HourlyEmployee::calculatePay() const {
 
 void HourlyEmployee::display() const {
     Employee::display();
-    cout << "Type: Hourly" << endl;
+    std::cout << "Type: Hourly" << std::endl;
 }

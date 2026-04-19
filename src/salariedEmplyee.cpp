@@ -1,9 +1,8 @@
 #include <iostream>
-using namespace std;
 
 #include "../include/salariedEmployee.h"
 
-SalariedEmployee::SalariedEmployee(string name_, int id_, double salary)
+SalariedEmployee::SalariedEmployee(std::string name_, int id_, double salary)
     : Employee(name_, id_), weeklySalary(salary) {}
 
 double SalariedEmployee::calculatePay() const {
@@ -12,5 +11,5 @@ double SalariedEmployee::calculatePay() const {
 
 void SalariedEmployee::display() const {
     Employee::display();
-    cout << "Type: Salaried" << endl;
+    std::cout << "Type: Salaried" << std::endl;
 }
