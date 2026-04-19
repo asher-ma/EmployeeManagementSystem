@@ -9,7 +9,7 @@ double ComissionEmployee::calculatePay() const {
     return baseSalary + sales * comissionRate;
 }
 
-void ComissionEmployee::display() const {
-    Employee::display();
-    std::cout << "Type: Comission" << std::endl;
-}
+// void ComissionEmployee::display() const {
+//     Employee::display();
+//     std::cout << "Type: Comission" << std::endl;
+// }

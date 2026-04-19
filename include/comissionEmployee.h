@@ -8,7 +8,7 @@
 class ComissionEmployee : public Employee {
     public:
         ComissionEmployee(const std::string& name_, int id_, double salary, double sales_, double rate);
-        void display() const override;
+        //void display() const override;
         double calculatePay() const override;
 
     private:

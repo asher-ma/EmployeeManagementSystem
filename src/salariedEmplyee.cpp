@@ -9,7 +9,7 @@ double SalariedEmployee::calculatePay() const {
     return weeklySalary;
 }
 
-void SalariedEmployee::display() const {
-    Employee::display();
-    std::cout << "Type: Salaried" << std::endl;
-}
+// void SalariedEmployee::display() const {
+//     Employee::display();
+//     std::cout << "Type: Salaried" << std::endl;
+// }
