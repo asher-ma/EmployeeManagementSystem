@@ -18,5 +18,5 @@ double HourlyEmployee::calculatePay() const {
 
 void HourlyEmployee::display() const {
     Employee::display();
-    cout << "Type: Hourly\nWeekly Pay: " << calculatePay() << endl;
+    cout << "Type: Hourly" << endl;
 }

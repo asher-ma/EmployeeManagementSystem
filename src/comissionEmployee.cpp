@@ -12,5 +12,5 @@ double ComissionEmployee::calculatePay() const {
 
 void ComissionEmployee::display() const {
     Employee::display();
-    cout << "Type: Comission\nWeekly Pay: " << calculatePay() << endl;
+    cout << "Type: Comission" << endl;
 }

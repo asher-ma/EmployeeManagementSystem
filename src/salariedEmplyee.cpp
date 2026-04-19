@@ -12,5 +12,5 @@ double SalariedEmployee::calculatePay() const {
 
 void SalariedEmployee::display() const {
     Employee::display();
-    cout << "Type: Salaried\nWeekly Pay: " << calculatePay() << endl;
+    cout << "Type: Salaried" << endl;
 }
