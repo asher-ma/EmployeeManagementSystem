@@ -4,7 +4,7 @@ using namespace std;
 
 class AbstractEmployee {
     public:
-        AbstractEmployee(string n, int i) : name(n), id(i) {}        
+        AbstractEmployee(string name_, int id_) : name(name_), id(id_) {}        
         virtual ~AbstractEmployee();
 
         virtual void display() const {

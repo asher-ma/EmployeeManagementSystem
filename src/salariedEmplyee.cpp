@@ -3,7 +3,8 @@ using namespace std;
 
 #include "../include/salariedEmployee.h"
 
-SalariedEmployee::SalariedEmployee(string n, int i, double s) : AbstractEmployee(n, i), weeklySalary(s) {}
+SalariedEmployee::SalariedEmployee(string name_, int id_, double salary)
+    : AbstractEmployee(name_, id_), weeklySalary(salary) {}
 
 double SalariedEmployee::calculatePay() const {
     return weeklySalary;

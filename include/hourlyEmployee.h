@@ -4,12 +4,13 @@ using namespace std;
 
 #include "abstractEmployee.h"
 
-class SalariedEmployee : public AbstractEmployee {
+class HourlyEmployee : public AbstractEmployee {
     public:
-        SalariedEmployee(string name_, int id_, double salary);
+        HourlyEmployee(string n, int i, double rate, double hours);
         void display() const override;
-
+        
     private:
-        double weeklySalary;
+        double hourlyRate;
+        double hoursWorked;
         double calculatePay() const override;
 };
