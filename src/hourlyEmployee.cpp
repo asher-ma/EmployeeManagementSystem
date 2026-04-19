@@ -19,8 +19,8 @@ double HourlyEmployee::calculatePay() const {
     }
 }
 
-// Override display to add type to base definition
-// void HourlyEmployee::display() const {
-//     Employee::display();
-//     std::cout << "Type: Hourly\nHours Worked: " << hoursWorked << std::endl;
-// }
+// Override display to add hours worked to base definition
+void HourlyEmployee::display() const {
+    Employee::display();
+    std::cout << "Hours Worked: " << hoursWorked << std::endl;
+}
