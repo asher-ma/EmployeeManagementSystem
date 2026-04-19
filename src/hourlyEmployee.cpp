@@ -2,7 +2,7 @@
 
 #include "hourlyEmployee.h"
 
-HourlyEmployee::HourlyEmployee(std::string name_, int id_, double rate, double hours)
+HourlyEmployee::HourlyEmployee(const std::string& name_, int id_, double rate, double hours)
     : Employee("Hourly", name_, id_), hourlyRate(rate), hoursWorked(hours) {}
 
 double HourlyEmployee::calculatePay() const {

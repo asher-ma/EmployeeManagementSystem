@@ -7,7 +7,7 @@
 
 class SalariedEmployee : public Employee {
     public:
-        SalariedEmployee(std::string name_, int id_, double salary);
+        SalariedEmployee(const std::string& name_, int id_, double salary);
         void display() const override;
         double calculatePay() const override;
 

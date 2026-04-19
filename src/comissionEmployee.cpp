@@ -2,7 +2,7 @@
 
 #include "comissionEmployee.h"
 
-ComissionEmployee::ComissionEmployee(std::string name_, int id_, double salary, double sales_, double rate)
+ComissionEmployee::ComissionEmployee(const std::string& name_, int id_, double salary, double sales_, double rate)
     : Employee("Comission", name_, id_), baseSalary(salary), sales(sales_), comissionRate(rate) {}
 
 double ComissionEmployee::calculatePay() const {
