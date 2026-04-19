@@ -2,10 +2,10 @@
 #include <iostream>
 using namespace std;
 
-class abstractEmployee {
+class AbstractEmployee {
     public:
-        abstractEmployee(string n, int i) : name(n), id(i) {}
-        virtual ~abstractEmployee();
+        AbstractEmployee(string n, int i) : name(n), id(i) {}
+        virtual ~AbstractEmployee();
 
     private:
         string name;
