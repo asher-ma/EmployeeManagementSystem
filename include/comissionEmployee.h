@@ -7,7 +7,10 @@
 
 class ComissionEmployee : public Employee {
     public:
+        // Collect name and id for base class
+        // and unique parameters for current class
         ComissionEmployee(const std::string& name_, int id_, double salary, double sales_, double rate);
+        // Overridding virtual functions
         //void display() const override;
         double calculatePay() const override;
 

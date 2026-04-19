@@ -7,7 +7,10 @@
 
 class HourlyEmployee : public Employee {
     public:
+        // Collect name and id for base class
+        // and unique parameters for current class
         HourlyEmployee(const std::string& name_, int id_, double rate, double hours);
+        // Overridding virtual functions
         //void display() const override;
         double calculatePay() const override;
         
