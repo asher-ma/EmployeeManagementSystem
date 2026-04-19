@@ -8,7 +8,9 @@ HourlyEmployee::HourlyEmployee(string name_, int id_, double rate, double hours)
 
 double HourlyEmployee::calculatePay() const {
     if (hoursWorked > 40){
-        return hourlyRate * hoursWorked * 1.5;
+        double basePay = hourlyRate * 40;
+        double overtime = hourlyRate * 1.5 *(hoursWorked-40);
+        return basePay + overtime;
     } else {
         return hourlyRate * hoursWorked;
     }
