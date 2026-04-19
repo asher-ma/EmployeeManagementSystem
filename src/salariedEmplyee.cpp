@@ -3,6 +3,4 @@ using namespace std;
 
 #include "../include/salariedEmployee.h"
 
-salariedEmployee::salariedEmployee(){
-    
-}
+SalariedEmployee::SalariedEmployee(string n, int i, double s) : AbstractEmployee(n, i), weeklySalary(s) {}

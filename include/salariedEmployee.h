@@ -6,7 +6,7 @@ using namespace std;
 
 class SalariedEmployee : public AbstractEmployee {
     public:
-    SalariedEmployee(string n, int i);
+    SalariedEmployee(string n, int i, double s);
 
     private:
         double weeklySalary;
