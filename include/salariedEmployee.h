@@ -6,9 +6,10 @@ using namespace std;
 
 class SalariedEmployee : public AbstractEmployee {
     public:
-    SalariedEmployee(string n, int i, double s);
-
+        SalariedEmployee(string n, int i, double s);
+        void display() const override;
+        
     private:
         double weeklySalary;
-        double calculatePay();
+        double calculatePay() const override;
 };

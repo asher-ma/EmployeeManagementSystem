@@ -8,7 +8,7 @@ class AbstractEmployee {
         virtual ~AbstractEmployee();
 
         virtual void display() const {
-            cout << "Name: " << name << " id: " << id << endl;
+            cout << "Employee: " << name << " (ID: " << id << ")" << endl;
         };
 
     private:
