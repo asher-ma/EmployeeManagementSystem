@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "../include/hourlyEmployee.h"
+#include "hourlyEmployee.h"
 
 HourlyEmployee::HourlyEmployee(std::string name_, int id_, double rate, double hours)
     : Employee(name_, id_), hourlyRate(rate), hoursWorked(hours) {}

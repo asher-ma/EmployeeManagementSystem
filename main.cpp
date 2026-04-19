@@ -1,10 +1,10 @@
 #include <iostream>
 #include <vector>
 
-#include "include/employee.h"
-#include "include/salariedEmployee.h"
-#include "include/hourlyEmployee.h"
-#include "include/comissionEmployee.h"
+#include "employee.h"
+#include "salariedEmployee.h"
+#include "hourlyEmployee.h"
+#include "comissionEmployee.h"
 
 int main (){
     std::vector<Employee*> employees;

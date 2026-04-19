@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "../include/comissionEmployee.h"
+#include "comissionEmployee.h"
 
 ComissionEmployee::ComissionEmployee(std::string name_, int id_, double salary, double sales_, double rate)
     : Employee(name_, id_), baseSalary(salary), sales(sales_), comissionRate(rate) {}
