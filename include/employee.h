@@ -13,12 +13,11 @@ class Employee {
         virtual void display() const {
             cout << "Employee: " << name << " (ID: " << id << ")" << endl;
         };
+        virtual double calculatePay() const =0;
 
     private:
         string name;
         int id;
-        
-        virtual double calculatePay() const =0;
 };
 
 #endif

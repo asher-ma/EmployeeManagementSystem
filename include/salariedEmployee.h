@@ -11,10 +11,10 @@ class SalariedEmployee : public Employee {
     public:
         SalariedEmployee(string name_, int id_, double salary);
         void display() const override;
+        double calculatePay() const override;
 
     private:
         double weeklySalary;
-        double calculatePay() const override;
 };
 
 #endif

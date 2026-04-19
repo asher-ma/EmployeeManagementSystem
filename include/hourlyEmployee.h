@@ -11,11 +11,11 @@ class HourlyEmployee : public Employee {
     public:
         HourlyEmployee(string n, int i, double rate, double hours);
         void display() const override;
+        double calculatePay() const override;
         
     private:
         double hourlyRate;
         double hoursWorked;
-        double calculatePay() const override;
 };
 
 #endif
