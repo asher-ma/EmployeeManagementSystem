@@ -16,6 +16,9 @@ int main (){
     for (const auto& emp : employees){
         emp->display();
         std::cout << "Weekly Pay: " << emp->calculatePay() << std::endl;
+        if (&emp != &employees.back()) {
+            std::cout << std::endl;
+        }
     }
 
     for (auto emp : employees){
