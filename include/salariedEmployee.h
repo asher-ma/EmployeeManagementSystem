@@ -5,9 +5,9 @@
 #include <iostream>
 using namespace std;
 
-#include "abstractEmployee.h"
+#include "employee.h"
 
-class SalariedEmployee : public AbstractEmployee {
+class SalariedEmployee : public Employee {
     public:
         SalariedEmployee(string name_, int id_, double salary);
         void display() const override;

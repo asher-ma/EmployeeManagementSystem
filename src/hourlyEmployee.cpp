@@ -4,7 +4,7 @@ using namespace std;
 #include "../include/hourlyEmployee.h"
 
 HourlyEmployee::HourlyEmployee(string name_, int id_, double rate, double hours)
-    : AbstractEmployee(name_, id_), hourlyRate(rate), hoursWorked(hours) {}
+    : Employee(name_, id_), hourlyRate(rate), hoursWorked(hours) {}
 
 double HourlyEmployee::calculatePay() const {
     if (hoursWorked > 40){
@@ -15,6 +15,6 @@ double HourlyEmployee::calculatePay() const {
 }
 
 void HourlyEmployee::display() const {
-    AbstractEmployee::display();
+    Employee::display();
     cout << "Type: Hourly\nWeekly Pay: " << calculatePay() << endl;
 }

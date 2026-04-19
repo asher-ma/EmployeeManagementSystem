@@ -1,14 +1,14 @@
-#ifndef _ABSTRACT_EMPLOYEE_H_
-#define _ABSTRACT_EMPLOYEE_H_
+#ifndef _EMPLOYEE_H_
+#define _EMPLOYEE_H_
 
 #include <string>
 #include <iostream>
 using namespace std;
 
-class AbstractEmployee {
+class Employee {
     public:
-        AbstractEmployee(string name_, int id_) : name(name_), id(id_) {}        
-        virtual ~AbstractEmployee();
+        Employee(string name_, int id_) : name(name_), id(id_) {}        
+        virtual ~Employee();
 
         virtual void display() const {
             cout << "Employee: " << name << " (ID: " << id << ")" << endl;
