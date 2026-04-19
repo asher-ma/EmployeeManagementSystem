@@ -1,3 +1,6 @@
+#ifndef _ABSTRACT_EMPLOYEE_H_
+#define _ABSTRACT_EMPLOYEE_H_
+
 #include <string>
 #include <iostream>
 using namespace std;
@@ -17,3 +20,5 @@ class AbstractEmployee {
         
         virtual double calculatePay() const =0;
 };
+
+#endif

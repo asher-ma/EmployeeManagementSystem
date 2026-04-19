@@ -1,3 +1,6 @@
+#ifndef _COMISSION_EMPLOYEE_H_
+#define _COMISSION_EMPLOYEE_H_
+
 #include <string>
 #include <iostream>
 using namespace std;
@@ -15,3 +18,5 @@ class ComissionEmployee : public AbstractEmployee {
         double comissionRate;
         double calculatePay() const override;
 };
+
+#endif

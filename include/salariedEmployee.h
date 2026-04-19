@@ -1,3 +1,6 @@
+#ifndef _SALARIED_EMPLOYEE_H_
+#define _SALARIED_EMPLOYEE_H_
+
 #include <string>
 #include <iostream>
 using namespace std;
@@ -13,3 +16,5 @@ class SalariedEmployee : public AbstractEmployee {
         double weeklySalary;
         double calculatePay() const override;
 };
+
+#endif
