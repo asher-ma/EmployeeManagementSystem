@@ -6,9 +6,11 @@
 class Employee {
     public:
         Employee(string name_, int id_) : name(name_), id(id_) {}        
-        virtual ~Employee();
+        virtual ~Employee() {}
 
-        virtual void display() const {};
+        virtual void display() const {
+            cout << "Employee: " << name << " (ID: " << id << ")" << endl;
+        }
         virtual double calculatePay() const =0;
 
     private:
