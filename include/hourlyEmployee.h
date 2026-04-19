@@ -2,14 +2,12 @@
 #define _HOURLY_EMPLOYEE_H_
 
 #include <string>
-#include <iostream>
-using namespace std;
 
 #include "employee.h"
 
 class HourlyEmployee : public Employee {
     public:
-        HourlyEmployee(string n, int i, double rate, double hours);
+        HourlyEmployee(string name_, int id_, double rate, double hours);
         void display() const override;
         double calculatePay() const override;
         

@@ -2,7 +2,6 @@
 #define _EMPLOYEE_H_
 
 #include <string>
-using namespace std;
 
 class Employee {
     public:

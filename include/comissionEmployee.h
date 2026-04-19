@@ -2,8 +2,6 @@
 #define _COMISSION_EMPLOYEE_H_
 
 #include <string>
-#include <iostream>
-using namespace std;
 
 #include "employee.h"
 
