@@ -14,9 +14,8 @@ class Employee {
         }
         virtual double calculatePay() const =0;
 
-        std::string employeeType;
-
     private:
+        std::string employeeType;
         std::string name;
         int id;
 };
