@@ -3,7 +3,7 @@
 #include "salariedEmployee.h"
 
 SalariedEmployee::SalariedEmployee(std::string name_, int id_, double salary)
-    : Employee(name_, id_), weeklySalary(salary) {}
+    : Employee("Salaried", name_, id_), weeklySalary(salary) {}
 
 double SalariedEmployee::calculatePay() const {
     return weeklySalary;
