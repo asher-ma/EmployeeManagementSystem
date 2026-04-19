@@ -6,7 +6,7 @@
 
 class Employee {
     public:
-        Employee(std:: string type, std::string name_, int id_) : employeeType(type), name(name_), id(id_) {}        
+        Employee(const std::string& type, const std::string& name_, int& id_) : employeeType(type), name(name_), id(id_) {}        
         virtual ~Employee() {}
 
         virtual void display() const {
@@ -15,7 +15,7 @@ class Employee {
         virtual double calculatePay() const =0;
 
         std::string employeeType;
-        
+
     private:
         std::string name;
         int id;
